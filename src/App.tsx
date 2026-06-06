@@ -36,6 +36,7 @@ import QuickActions from "./components/QuickActions";
 import AboutSection from "./components/About";
 import GamingSetup from "./components/GamingSetup";
 import PriceTable from "./components/PriceTable";
+import SectionReveal from "./components/SectionReveal";
 
 // Interfaces for typing safety and resolving TypeScript errors
 interface GamingRig {
@@ -327,12 +328,43 @@ function App() {
         onNotify={triggerMockNotification}
       />
 
-      <GameHero />
-      <QuickActions />
-      <AboutSection />
-      <GamingSetup />
-      <PriceTable />
+      <SectionReveal>
+        <GameHero />
+      </SectionReveal>
 
+      <SectionReveal delay={0.1}>
+        <AboutSection />
+      </SectionReveal>
+
+      <SectionReveal delay={0.15}>
+        <GamingSetup />
+      </SectionReveal>
+
+      <SectionReveal delay={0.2}>
+        <PriceTable />
+      </SectionReveal>
+
+      <SectionReveal delay={0.25}>
+        <BookSlot
+          selectedRig={selectedRig}
+          setSelectedRig={setSelectedRig}
+          bookingDate={bookingDate}
+          setBookingDate={setBookingDate}
+          bookingTime={bookingTime}
+          setBookingTime={setBookingTime}
+          hours={hours}
+          setHours={setHours}
+          players={players}
+          setPlayers={setPlayers}
+          totalPrice={totalPrice}
+          generateDynamicWhatsAppLink={generateDynamicWhatsAppLink}
+          onNotify={triggerMockNotification}
+        />
+      </SectionReveal>
+
+      <SectionReveal delay={0.25}>
+        <Footer onNotify={triggerMockNotification} />
+      </SectionReveal>
       {/* <main className="relative z-10 mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
         <section
           id="membership"
@@ -677,24 +709,6 @@ function App() {
           </div>
         </section>
       </main> */}
-
-      <BookSlot
-        selectedRig={selectedRig}
-        setSelectedRig={setSelectedRig}
-        bookingDate={bookingDate}
-        setBookingDate={setBookingDate}
-        bookingTime={bookingTime}
-        setBookingTime={setBookingTime}
-        hours={hours}
-        setHours={setHours}
-        players={players}
-        setPlayers={setPlayers}
-        totalPrice={totalPrice}
-        generateDynamicWhatsAppLink={generateDynamicWhatsAppLink}
-        onNotify={triggerMockNotification}
-      />
-
-      <Footer onNotify={triggerMockNotification} />
     </div>
   );
 }

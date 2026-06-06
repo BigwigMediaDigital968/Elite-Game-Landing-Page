@@ -111,8 +111,8 @@ export default function AboutSection() {
             <span className="text-xs uppercase font-mono tracking-[0.4em] text-cyan-400 font-bold block">
               // CENTRAL SECTOR INTEL
             </span>
-            <h2 className="text-4xl md:text-5xl font-black italic tracking-wide uppercase text-white leading-tight">
-              YOUR PREMIUM <br />
+            <h2 className="text-3xl md:text-4xl font-black italic tracking-wide uppercase text-white leading-tight">
+              YOUR PREMIUM{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-400 to-fuchsia-500 pe-5">
                 GAMING COCKPIT
               </span>{" "}

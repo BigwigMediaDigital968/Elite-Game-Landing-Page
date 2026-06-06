@@ -62,7 +62,7 @@ function GameHero({ onNotify }: GameHeroProps) {
             <span className="text-xs uppercase tracking-[0.5em] text-cyan-400 font-bold block mb-2">
               Elite Lounge
             </span>
-            <h1 className="text-5xl md:text-7xl font-black italic tracking-wider uppercase leading-none select-none">
+            <h1 className="text-5xl md:text-6xl font-black italic tracking-wider uppercase leading-none select-none">
               <span className="text-white drop-shadow-[0_4px_12px_rgba(255,255,255,0.15)] block">
                 Game. Chill.
               </span>
@@ -150,7 +150,7 @@ export default function Hero() {
       setCurrentBgIndex(
         (prevIndex) => (prevIndex + 1) % HERO_BACKGROUNDS.length,
       );
-    }, 6000);
+    }, 3000);
     return () => clearInterval(bgTimer);
   }, []);
 
@@ -168,10 +168,10 @@ export default function Hero() {
           <AnimatePresence mode="wait">
             <motion.div
               key={currentBgIndex}
-              initial={{ opacity: 0, scale: 1.05 }}
+              initial={{ opacity: 0.4, scale: 1.15 }}
               animate={{ opacity: 1, scale: 1 }}
-              exit={{ opacity: 0.5, scale: 0.98 }}
-              transition={{ duration: 1.8, ease: "easeInOut" }}
+              exit={{ opacity: 0, scale: 0.98 }}
+              transition={{ duration: 1, ease: "easeInOut" }}
               className="absolute inset-0 w-full h-full bg-cover bg-center"
               style={{
                 backgroundImage: `url(${HERO_BACKGROUNDS[currentBgIndex]})`,

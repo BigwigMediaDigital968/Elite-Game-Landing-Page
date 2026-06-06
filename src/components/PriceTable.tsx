@@ -101,7 +101,7 @@ export default function PriceTable() {
       <div className="absolute bottom-0 left-1/4 w-[400px] h-[400px] bg-fuchsia-500/5 blur-[120px] rounded-full pointer-events-none" />
 
       {/* Header Panel */}
-      <div className="text-center max-w-3xl mx-auto mb-20 space-y-4">
+      <div className="text-center max-w-4xl mx-auto mb-20 space-y-4">
         <motion.div
           initial={{ opacity: 0, y: 15 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -116,7 +116,7 @@ export default function PriceTable() {
           initial={{ opacity: 0, scale: 0.95 }}
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
-          className="text-4xl md:text-6xl font-black italic tracking-tighter uppercase text-white"
+          className="text-3xl md:text-6xl font-black italic tracking-tighter uppercase text-white"
         >
           LAUNCH{" "}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-400 to-fuchsia-500 drop-shadow-[0_0_20px_rgba(6,182,212,0.15)] pe-3">
