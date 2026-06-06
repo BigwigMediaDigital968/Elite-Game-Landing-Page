@@ -19,14 +19,19 @@ const Footer = ({ onNotify }: FooterProps) => {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 pb-8 border-b border-white/5">
             {/* Brand Info */}
             <div className="md:col-span-2 space-y-4">
-              <div className="flex items-center gap-3">
-                <div className="relative flex items-center justify-center bg-slate-900 border border-cyan-400/30 text-cyan-400 p-2 rounded-lg">
-                  <Gamepad2 className="h-4.5 w-4.5" />
+              <div className="flex items-center gap-4">
+                <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-slate-900/90 p-2 shadow-glow">
+                  <img
+                    src="/logo.png"
+                    alt="Elite Lounge Logo"
+                    className="h-full w-full object-contain"
+                  />
                 </div>
-                <span className="font-black text-lg tracking-[0.2em] text-white uppercase">
-                  ALICA{" "}
-                  <span className="text-cyan-400 text-xs">ELITE LOUNGE</span>
-                </span>
+                <div>
+                  <p className="text-lg font-semibold text-white">
+                    Elite Lounge
+                  </p>
+                </div>
               </div>
               <p className="text-xs text-slate-400 leading-relaxed max-w-sm font-mono">
                 Deesa's most optimized esports cyber-room. Harnessing dual 4K

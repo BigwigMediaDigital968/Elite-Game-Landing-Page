@@ -4,7 +4,11 @@
 
 :root {
   color-scheme: dark;
-  font-family: "Rajdhani", Inter, sans-serif;
+
+  --font-heading: "Orbitron", sans-serif;
+  --font-body: "Rajdhani", sans-serif;
+  --font-button: "Oxanium", sans-serif;
+
   --shadow-glow: 0 0 80px rgba(0, 217, 255, 0.2);
 }
 
@@ -14,6 +18,8 @@ html {
 
 body {
   min-height: 100vh;
+  font-family: var(--font-body);
+
   background:
     radial-gradient(circle at top, rgba(0, 217, 255, 0.08), transparent 30%),
     radial-gradient(
@@ -22,6 +28,7 @@ body {
       transparent 28%
     ),
     #050510;
+
   cursor: none;
   overflow-x: hidden;
   scrollbar-width: none;
@@ -31,6 +38,34 @@ body {
 body::selection {
   background: rgba(0, 217, 255, 0.25);
   color: #ffffff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.btn-primary,
+.btn-secondary,
+.btn-glow,
+button {
+  font-family: var(--font-button);
+  letter-spacing: 0.12em;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+nav a,
+nav button {
+  font-family: var(--font-button);
+  letter-spacing: 0.15em;
 }
 
 body,
@@ -182,4 +217,16 @@ a {
   .glass-card {
     border-radius: 1.5rem;
   }
+}
+
+.font-heading {
+  font-family: var(--font-heading);
+}
+
+.font-body {
+  font-family: var(--font-body);
+}
+
+.font-button {
+  font-family: var(--font-button);
 }

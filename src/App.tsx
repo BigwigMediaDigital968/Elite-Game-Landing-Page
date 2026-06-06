@@ -333,7 +333,7 @@ function App() {
       <GamingSetup />
       <PriceTable />
 
-      <main className="relative z-10 mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
+      {/* <main className="relative z-10 mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
         <section
           id="membership"
           className="mt-16 rounded-[2rem] border border-white/10 bg-slate-950/80 p-8"
@@ -676,7 +676,7 @@ function App() {
             </div>
           </div>
         </section>
-      </main>
+      </main> */}
 
       <BookSlot
         selectedRig={selectedRig}
@@ -694,42 +694,6 @@ function App() {
         onNotify={triggerMockNotification}
       />
 
-      <footer className="border-t border-white/10 bg-slate-950/80 py-10">
-        <div className="mx-auto flex max-w-7xl flex-col gap-8 px-4 sm:px-6 lg:px-8 lg:flex-row lg:items-center lg:justify-between">
-          <div className="flex items-center gap-4">
-            <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-slate-900/90 p-2 shadow-glow">
-              <img
-                src="/logo.png"
-                alt="Elite Lounge Logo"
-                className="h-full w-full object-contain"
-              />
-            </div>
-            <div>
-              <p className="text-lg font-semibold text-white">Elite Lounge</p>
-              <p className="mt-2 text-sm text-slate-400">
-                Premium Gaming Lounge Experience in Deesa
-              </p>
-            </div>
-          </div>
-          <div className="flex flex-wrap gap-6 text-sm text-slate-300">
-            <a href="#home" className="hover:text-white">
-              Home
-            </a>
-            <a href="#pricing" className="hover:text-white">
-              Pricing
-            </a>
-            <a href="#membership" className="hover:text-white">
-              Membership
-            </a>
-            <a href="#contact" className="hover:text-white">
-              Contact
-            </a>
-          </div>
-        </div>
-        <div className="mt-8 text-center text-sm text-slate-500">
-          © 2026 Elite Lounge. All Rights Reserved.
-        </div>
-      </footer>
       <Footer onNotify={triggerMockNotification} />
     </div>
   );
