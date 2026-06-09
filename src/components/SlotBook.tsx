@@ -114,7 +114,7 @@ export default function BookSlot({
   return (
     <section
       id="rig-configurator"
-      className="relative py-16 lg:py-24 border-t border-white/5 bg-slate-950/80 backdrop-blur-md"
+      className="relative py-14 border-t border-white/5 bg-slate-950/80 backdrop-blur-md"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Header */}

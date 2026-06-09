@@ -94,7 +94,7 @@ export default function PriceTable() {
   return (
     <section
       id="pricing"
-      className="relative py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto z-10 overflow-hidden"
+      className="relative py-14 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto z-10 overflow-hidden"
     >
       {/* Background Cyber Glow Elements */}
       <div className="absolute top-0 right-1/4 w-[400px] h-[400px] bg-cyan-500/5 blur-[120px] rounded-full pointer-events-none" />
